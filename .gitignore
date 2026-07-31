@@ -1,0 +1,14 @@
+# Entorno virtual
+venv/
+
+# Resultados de la construcción del dataset
+result_build_dataset/
+
+# Resultados de entrenamientos del modelo
+runs/
+
+# Otros archivos generados y cachés de Python
+__pycache__/
+*.pyc
+
+*.pt
