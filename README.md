@@ -7,7 +7,6 @@ Este proyecto tiene como objetivo el entrenamiento específico del modelo YOLO26
 Los archivos utilizados para el entrenamiento provienen de los siguientes datasets de Ultralytics Hub:
 - [dfire (por xuwei-pro)](https://platform.ultralytics.com/xuwei-pro/datasets/dfire)
 - [fire-and-smoke-dataset (por dong)](https://platform.ultralytics.com/dong/datasets/fire-and-smoke-dataset)
-- [fire-smoke-detectionyolo26 (por x-xc)](https://platform.ultralytics.com/x-xc/datasets/fire-smoke-detectionyolo26)
 
 ## Estructura y Flujo del Proyecto
 
@@ -21,7 +20,7 @@ A partir de los datasets crudos, este script se encarga de construir la estructu
 
 Ambas carpetas están divididas en los subconjuntos `train` (entrenamiento), `val` (validación) y `test` (prueba). Cada imagen va acompañada de un archivo de texto (`.txt`) con las coordenadas de las cajas delimitadoras y se genera además un archivo `.yaml` de configuración para indicarle al modelo dónde encontrar los datos y sus clases.
 
-### 2. Entrenamiento (`training-gym.py`)
+### 2. Entrenamiento (`train-cpu.py` o `train-gpu.py`)
 
 Este script utiliza los archivos estructurados y generados en el paso anterior junto con el archivo de configuración `.yaml` para realizar el entrenamiento del modelo YOLO.
 
